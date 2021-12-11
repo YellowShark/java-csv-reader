@@ -16,7 +16,7 @@ public class HumanMapper implements Mapper<Human, HumanDto> {
     }
 
     @Override
-    public HumanDto fromDomain(Human dto) {
-        return new HumanDto();
+    public HumanDto fromDomain(Human domain) {
+        return new HumanDto(domain.id(), domain.name(), domain.sex(), domain.dateOfBirth(), domain.subdiv().name(), domain.salary());
     }
 }
