@@ -1,4 +1,4 @@
-package data.mapper;
+package data.services.mapper;
 
 import data.services.csv.model.HumanDto;
 import data.services.generator.IdGenerator;

@@ -1,4 +1,4 @@
-package data.parser;
+package data.services.parser;
 
 import data.services.csv.model.HumanDto;
 

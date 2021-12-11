@@ -1,6 +1,6 @@
 import com.opencsv.exceptions.CsvValidationException;
-import data.mapper.HumanMapper;
-import data.parser.HumanParser;
+import data.services.mapper.HumanMapper;
+import data.services.parser.HumanParser;
 import data.services.csv.reader.ReaderFromCSV;
 
 import java.io.IOException;
