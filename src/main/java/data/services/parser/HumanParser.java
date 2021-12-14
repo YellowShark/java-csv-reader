@@ -6,7 +6,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Class for parsing records from the foreign_names.csv file.
+ */
 public class HumanParser {
+    /**
+     * Parses line of data from file and returns HumanDto object.
+     * @param line - one record from file.
+     * @return HumanDto object.
+     */
     public HumanDto parse(String[] line) {
         var record = new ArrayList<>(List.of(line[0].split(";")));
 
@@ -25,6 +33,11 @@ public class HumanParser {
         return human;
     }
 
+    /**
+     * Method for dealing with parsing issues. If User's name contains spaces or commas.
+     * @param line - one record from file.
+     * @param record - transformed readable record.
+     */
     private void fixInvalidRecord(String[] line, ArrayList<String> record) {
         String[] piece = new String[0];
         String fullName = "";

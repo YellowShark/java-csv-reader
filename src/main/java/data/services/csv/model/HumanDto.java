@@ -2,6 +2,9 @@ package data.services.csv.model;
 
 import java.util.Objects;
 
+/**
+ * Class for storing data received from CSV file.
+ */
 public class HumanDto {
     private int id;
     private String name;
